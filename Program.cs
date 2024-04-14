@@ -37,12 +37,23 @@ Console.WriteLine("-------------<4>-------------");
 
 //Challenge 1
 string[] dayOfWeek = { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
-for(int i = 0; i > dayOfWeek.Length; i++)
-{
-    Console.WriteLine(dayOfWeek[i]);
-}
+//for (int i = 0; i < dayOfWeek.Length; i++)
+//{
+  //  Console.WriteLine(dayOfWeek[i]);
+//}
 //or
 foreach (var i in dayOfWeek)
 {
     Console.WriteLine(i);
 }
+
+int[] array = { 23, 213, 312, 32, 4, 355, 45, 64, 6 };
+var sum = 0;
+for (int i = 0; i < array.Length; i++)
+{
+    sum += array[i];
+    Console.WriteLine(sum);
+}
+//Bonus
+int[,] numbering = { { 12, 22, 1 }, { 21, 554, 33 } };
+Console.WriteLine(numbering[0, 12]);
